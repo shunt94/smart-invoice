@@ -5,7 +5,7 @@ import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 import Home from './views/Home'
 import App from './views/App'
 import NoMatch from './views/NoMatch'
-
+import Invoice from './views/Invoice'
 
 class Routing extends React.Component {
     handleOnRoute() {
@@ -18,6 +18,7 @@ class Routing extends React.Component {
                     // Routes Go here
                     <IndexRoute component={Home} />
                     <Route path='/' component={Home}/>
+                    <Route path='/new' component={Invoice}/>
 
                     // Routes go before no match (404)
                     <Route path="*" component={NoMatch}/>

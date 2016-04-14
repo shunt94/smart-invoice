@@ -55,7 +55,8 @@ module.exports = {
         root: path.resolve(__dirname),
         alias: {
             assets: 'src/assets',
-            css: 'src/assets/css'
+            css: 'src/assets/css',
+            components: 'src/components'
         }
     },
     output: {
