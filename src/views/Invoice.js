@@ -1,17 +1,17 @@
 import React from 'react'
 
 // Components
+import InvoiceTemplate from 'components/invoice/InvoiceTemplate'
 
-
-class Home extends React.Component {
+class Invoice extends React.Component {
     render() {
         return (
             <div>
                 <Navbar/>
-                Invoice
+                <InvoiceTemplate invoiceNumber={1}/>
             </div>
         );
     }
 }
 
-export default Home;
+export default Invoice
